@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  font-size: 1rem;
+  /* margin: 10px; */
+  min-height: 100vh;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(225, 100%, 98%);
+  margin: 25px;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.container #illus {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  padding: 40px 30px 0px;
+}
+p.discription {
+  padding: 30px 50px;
+  color: hsl(224, 23%, 55%);
+}
+.music * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.music img {
+  margin: 10px;
+}
+.info .annual {
+  font-weight: 900;
+  display: block;
+  padding: 4px;
+  color: hsl(223, 47%, 23%);
+}
+.info .price {
+  color: hsl(224, 23%, 55%);
+}
+.music a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0px 0px 0px 100px;
+}
+.music a:link,
+a:visited {
+  color: hsl(245, 75%, 52%);
+}
+.music a:hover,
+a:active {
+  color: hsl(245, 83%, 68%);
+  text-decoration: none;
+}
+button#proceed {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 100px;
+  margin: 15px 0px 0px;
+}
+button#proceed:hover,
+#proceed:focus {
+  background-color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+button#cancel {
+  border: none;
+  padding: 15px 100px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  margin: 15px;
+}
+button#cancel:hover,
+#cancel:focus {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: repeat-x;
+  }
+  p.discription {
+    padding: 25px 40px;
+  }
+  .music a {
+    padding: 0px 0px 0px 40px;
+  }
+  button#proceed,
+  button#cancel {
+    padding: 15px 70px;
+  }
+}
